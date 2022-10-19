@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipos de triângulos</title>
+  <style>
+    img {
+      height: 300px;
+      width: 300px;
+      float: left;
+      margin-right: 5%;
+    }
+    h1 {
+      border-bottom-style: inset;
+    }
+    input#btVerificar {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <img src="triangulo.png" alt="Triângulo">
+  <h1>Programa lados de um triângulo</h1>
+  <p>Lado A: 
+    <input type="text" id="inLadoA">
+  </p>
+  <p>Lado B: 
+    <input type="text" id="inLadoB">
+  </p>
+  <p>Lado C:
+    <input type="text" id="inLadoC">
+  </p>
+  <input type="button" value="Verificar lados" id="btVerificar">
+  <pre id="outResultado"></pre>
+  <script src="script.js"></script>
+</body>
+</html>
