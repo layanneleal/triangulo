@@ -1,0 +1,2 @@
+# triangulo
+ Tipos de triângulos
