@@ -20,44 +20,16 @@ function verificarLados() {
   if(ladoA < soma2 && ladoB < soma3 && ladoC < soma) {
     if (ladoA == ladoB && ladoB == ladoC) {
       outResultado.textContent = 'Triângulo Equilátero'
+
     }else if (ladoA == ladoB || ladoA == ladoC || ladoC == ladoB) {
       outResultado.textContent = 'Triângulo Isósceles'
+      
     }else{
       outResultado.textContent = 'Triângulo Escaleno'
     }
   }else{
     outResultado.textContent = 'Informe as medidas corretas'
   }
-
-
-
-/*
-  if(ladoA < soma2) {
-    if(ladoB < soma3) {
-      if(ladoC < soma) {
-        //Se os três lados forem iguais: equilátero
-        if (ladoA == ladoB && ladoB == ladoC && ladoC == ladoA) {
-          outResultado.textContent = 'Triângulo Equilátero'
-        }
-        //Se dois lados forem iguais: isóceles
-        if((ladoA == ladoB) && (ladoC != ladoA && ladoC != ladoB)) {
-          outResultado.textContent = 'Triângulo Isoscéles'
-        }
-        //Se os três lados forem diferentes: escaleno
-        if (ladoA != ladoB && ladoB != ladoC && ladoC != ladoA) {
-          outResultado.textContent = 'Triângulo Escaleno'
-        }
-      }else{
-        outResultado.textContent = 'Não é um triângulo!'
-      }
-    }else{
-      outResultado.textContent = 'Não é um triângulo!'
-    }
-  }else{
-    outResultado.textContent = 'Não é um triângulo!'
-  }*/
-
-
 }
 //Cria referência ao elemento btVerificar e associa function ao evento click
 let btVerificar = document.getElementById('btVerificar')
